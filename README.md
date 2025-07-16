@@ -66,11 +66,3 @@ YOLO(You Only Look Once)는 객체 탐지(Object Detection) 분야에서 널리 
 | YOLOv12 | 영역 기반 주의 메커니즘(A²) 도입, R-ELAN 특징 집합 모듈, FlashAttention 최적화, 실시간 성능 및 정확도 대폭 향상 |
 ---
 
-## 설치 및 실행 방법 (예: YOLOv3)
-
-### 1. 환경 설정
-- Python 3.7 이상 권장
-- OpenCV, PyTorch 등 필수 라이브러리 설치
-
-```bash
-pip install torch torchvision opencv-python numpy
