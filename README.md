@@ -71,10 +71,6 @@ YOLO(You Only Look Once)는 객체 탐지(Object Detection) 분야에서 널리 
 
 ---
 
-필요하면 이 내용도 md 파일로 만들어 드릴게요!
-
-
-
 
 ## 주요 특징
 
