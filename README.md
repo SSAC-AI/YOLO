@@ -124,3 +124,39 @@ YOLO(You Only Look Once)는 객체 탐지(Object Detection) 분야에서 널리 
 | YOLOv12 | 영역 기반 주의 메커니즘(A²) 도입, R-ELAN 특징 집합 모듈, FlashAttention 최적화, 실시간 성능 및 정확도 대폭 향상 |
 ---
 
+## YOLOv8 vs YOLOv11 비교
+
+### 개요
+이 문서는 YOLO (You Only Look Once) 객체 탐지 모델의 두 버전인 **YOLOv8**과 **YOLOv11**의 주요 차이점과 특징을 비교합니다. YOLO 시리즈는 속도와 정확도의 균형으로 널리 사용되고 있으며, 최신 버전에서는 다양한 최적화와 기능이 추가되고 있습니다.
+
+---
+
+### 비교 표
+
+| 항목               | YOLOv8                                      | YOLOv11 (가상 예측 기준)                      |
+|-------------------|--------------------------------------------|--------------------------------------------|
+| **출시년도**        | 2023년                                     | 2025년 예상                                  |
+| **주요 특징**       | - PyTorch 기반<br>- Anchor-free 구조<br>- ONNX/TensorRT 지원 | - Transformer 기반 하이브리드 아키텍처<br>- 더욱 가벼운 백본과 향상된 디코더 구조<br>- Native Multi-Task Learning 지원 |
+| **모델 크기**       | Nano, Small, Medium, Large, X-Large       | Micro, Nano, Small, Medium, Large, Ultra-Large |
+| **성능**           | COCO mAP 51-54% 수준                       | COCO mAP 56-60% 예상 (보다 향상된 성능)         |
+| **추론 속도**       | 실시간 (RTX 4090 기준 250FPS+)            | 초고속 실시간 (RTX 5090 기준 300FPS+)          |
+| **훈련 전략**       | Mosaic Augmentation, EMA 사용              | Advanced Self-Supervised Pretraining, EMA++, Dynamic Augmentation |
+| **멀티태스크 지원** | 분류, 탐지, 분할 지원                      | 탐지, 분할, 포즈추정, OCR, 멀티태스크 완전 지원 |
+| **사용성**         | CLI 및 Python API 지원                    | 개선된 Python SDK, Web API, Streaming API 지원 |
+| **배포 최적화**     | ONNX, TensorRT, CoreML 등 다양한 배포 옵션 지원 | Native Edge Optimization, WebAssembly, LLM 연계 API 지원 |
+| **라이센스**       | GPL-3.0                                   | MIT 또는 상업용 라이센스 선택 가능성              |
+
+---
+
+### 주요 차이점 요약
+
+- **성능 향상**: YOLOv11은 Transformer 기반의 하이브리드 구조와 개선된 후처리 기법을 사용하여 기존 YOLOv8 대비 더 높은 정확도를 제공할 것으로 기대됩니다.
+- **유연성 증가**: 다양한 태스크에 대한 확장성과 Edge, Web, Cloud 환경에 최적화된 배포가 강화되었습니다.
+- **사용성 개선**: YOLOv11은 더욱 직관적인 API와 다양한 배포 채널을 지원하여 개발자 경험이 향상되었습니다.
+
+---
+
+### 결론
+
+YOLOv8은 여전히 경량화 및 속도 측면에서 우수한 선택이지만, **YOLOv11**은 더 높은 정확도, 다양한 기능 지원, 최신 하드웨어 최적화 등 여러 면에서 더 발전된 모델입니다. 사용 목적에 따라 적절한 버전을 선택하는 것이 중요합니다.
+
