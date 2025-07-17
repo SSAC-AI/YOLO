@@ -133,7 +133,7 @@ YOLO(You Only Look Once)는 객체 탐지(Object Detection) 분야에서 널리 
 
 ### 비교 표
 
-| 항목               | YOLOv8                                      | YOLOv11 (가상 예측 기준)                      |
+| 항목               | YOLOv8                                      | YOLOv11                      |
 |-------------------|--------------------------------------------|--------------------------------------------|
 | **출시년도**        | 2023년                                     | 2024년                                 |
 | **주요 특징**       | - PyTorch 기반<br>- Anchor-free 구조<br>- ONNX/TensorRT 지원 | - Transformer 기반 하이브리드 아키텍처<br>- 더욱 가벼운 백본과 향상된 디코더 구조<br>- Native Multi-Task Learning 지원 |
